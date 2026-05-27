@@ -1,0 +1,10 @@
+﻿DONE - LT removed.
+DONE - Icons shifted left after LT removal.
+DONE - Last icon is About Section.
+DONE - About state fades the MPC and shows the bio text.
+DONE - Exit About with ESC or the top-left [x] button.
+DONE - Icons are shown above their corresponding pad/link labels.
+
+TODO - Confirm/fix mini players or fallback links for: AY, IG, PY, LE/EV, MR.
+DONE - VC already uses a YouTube video mini player.
+NOTE - LT is no longer needed because Linktree was removed.

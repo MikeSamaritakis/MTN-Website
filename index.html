@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="M.T.N - a haunted underground hip hop MPC workstation for music, videos, booking, samples, and exclusive drops."
+    />
+    <title>M.T.N | Haunted MPC Workstation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" data-loader>
+      <div class="loader__tag">M.T.N</div>
+      <div class="loader__bar"><span></span></div>
+      <p>Booting haunted sampler</p>
+    </div>
+
+    <main class="stage" aria-label="M.T.N haunted MPC website">
+      <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/MTN_background_visual.mp4" type="video/mp4" />
+        <!-- <source src="assets/MTN_background_visual.mov" /> -->
+      </video>
+      <div class="background-video__shade" aria-hidden="true"></div>
+      <canvas class="particles" data-particles aria-hidden="true"></canvas>
+      <div class="fog fog--one" aria-hidden="true"></div>
+      <div class="fog fog--two" aria-hidden="true"></div>
+      <div class="static-noise" aria-hidden="true"></div>
+
+      <section class="mpc" aria-label="Interactive MPC navigation">
+        <div class="mpc__bezel">
+          <header class="mpc__header">
+            <a class="brand" href="#" aria-label="M.T.N home">
+              <span class="brand__name">M.T.N</span>
+              <span class="brand__model">MPC-6000</span>
+            </a>
+            <div class="status" aria-label="Device status lights">
+              <span class="led led--cyan"></span>
+              <span class="led led--blue"></span>
+              <span class="led led--ice"></span>
+              <span class="led led--red"></span>
+              <span class="rec">REC</span>
+              <span class="led led--red led--pulse"></span>
+            </div>
+          </header>
+
+          <div class="mpc__surface">
+            <aside class="left-deck">
+              <div class="screen" aria-live="polite">
+                <div class="screen__top">
+                  <span data-pad-counter>PAD 01/16</span>
+                  <span class="ready">READY</span>
+                </div>
+                <div class="screen-preview" data-screen-preview>
+                  <div class="screen-preview__fallback" data-screen-fallback>
+                    <div class="mini-browser" aria-hidden="true">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <strong data-screen-url>open.spotify.com</strong>
+                    </div>
+                    <h1 data-screen-title>Spotify</h1>
+                    <p data-screen-copy>Stream the latest underground releases.</p>
+                    <div class="wave" aria-hidden="true">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="screen__bottom">
+                  <span data-screen-format>44K 24</span>
+                  <span data-screen-mode>LINK</span>
+                </div>
+              </div>
+
+              <div class="transport" aria-label="Hardware transport controls">
+                <button class="transport__btn" type="button" aria-label="Previous pad" data-prev>
+                  <span></span>
+                </button>
+                <button class="transport__btn transport__btn--play" type="button" aria-label="Open selected pad" data-open>
+                  <span></span>
+                </button>
+                <button class="transport__btn" type="button" aria-label="Next pad" data-next>
+                  <span></span>
+                </button>
+              </div>
+
+              <div class="knob-zone">
+                <p>SELECT</p>
+                <div
+                  class="knob"
+                  role="slider"
+                  tabindex="0"
+                  aria-label="Rotary selector. Scroll or drag to select a pad."
+                  aria-valuemin="1"
+                  aria-valuemax="16"
+                  aria-valuenow="1"
+                  data-knob
+                >
+                  <span class="knob__ticks"></span>
+                  <span class="knob__face" data-knob-face></span>
+                  <span class="knob__mark"></span>
+                </div>
+                <output data-knob-output>01</output>
+              </div>
+            </aside>
+
+            <nav class="pad-bank" aria-label="MPC pad links" data-pad-bank></nav>
+          </div>
+
+          <div class="hardware-details" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="page-panel" data-page-panel aria-hidden="true">
+        <button class="page-panel__close" type="button" aria-label="Close panel" data-close-panel>x</button>
+        <p data-panel-kicker>Selected pad</p>
+        <h2 data-panel-title>Spotify</h2>
+        <p data-panel-copy>Stream the latest underground releases.</p>
+        <a href="#" class="panel-link" data-panel-link>Open link</a>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
