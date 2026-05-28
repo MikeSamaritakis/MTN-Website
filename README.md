@@ -57,7 +57,18 @@ You can also use any static server extension or hosting platform.
 
 ## Deployment
 
-The project is ready for static hosting on platforms such as GitHub Pages, Netlify, Vercel, or Cloudflare Pages. Deploy the repository root so `index.html`, `styles.css`, `script.js`, and the `assets/` folder stay together.
+The site is hosted with GitHub Pages and uses a custom domain registered through GoDaddy.
+
+Basic setup:
+
+1. Push the repository files to GitHub.
+2. In the repository settings, enable GitHub Pages from the selected branch.
+3. Add the custom domain in the GitHub Pages settings.
+4. In GoDaddy DNS, point the domain to GitHub Pages.
+5. Add a `www` CNAME record pointing to the GitHub Pages default domain, such as `username.github.io`.
+6. Wait for DNS propagation, then enable **Enforce HTTPS** in GitHub Pages.
+
+Deploy the repository root so `index.html`, `styles.css`, `script.js`, and the `assets/` folder stay together.
 
 ## Notes
 
